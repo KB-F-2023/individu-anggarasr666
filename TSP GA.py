@@ -28,7 +28,7 @@ def mutate(path: np.ndarray, rate: int):
         path[a] = path[b]
         path[b] = temp
 
-
+#swap crossover array
 def crossover(size: int, path_a: np.ndarray, path_b: np.ndarray, mutation_rate: int = 40):
     start = randint(0, int(size/3)) #minimal ada 1 array yang ditukar
     end = randint(start, size-1)
